@@ -1,0 +1,105 @@
+
+<style>
+@import url('https://fonts.googleapis.com/css?family=Roboto:300');
+body{
+	margin:0;
+	padding:0;
+}
+.dlab {
+   text-align:center;
+  background:linear-gradient(141deg, #ccc 25%, #eee 40%, #ddd 55%);
+  color:#555;
+  font-family:'Roboto';
+  font-weight:300;
+  font-size:32px;
+  height: 400px;
+  overflow:hidden;
+  -webkit-backface-visibility: hidden;
+  -webkit-perspective: 1000;
+  -webkit-transform: translate3d(0,0,0);
+  
+}
+
+
+.dlab div {
+  display:inline-block;
+  overflow:hidden;
+  white-space:nowrap;
+}
+
+.dlab div:first-of-type {   
+  animation: showup 7s infinite;
+}
+
+.dlab div:last-of-type {
+  width:0px;
+  animation: reveal 7s infinite;
+}
+
+.dlab div:last-of-type span {
+  margin-left:-400px;
+  animation: slidein 7s infinite;
+}
+
+@keyframes showup {
+    0% {opacity:0;}
+    20% {opacity:1;}
+    80% {opacity:1;}
+    100% {opacity:0;}
+}
+
+@keyframes slidein {
+    0% { margin-left:-800px; }
+    20% { margin-left:-800px; }
+    35% { margin-left:0px; }
+    100% { margin-left:0px; }
+}
+
+@keyframes reveal {
+    0% {opacity:0;width:0px;}
+    20% {opacity:1;width:0px;}
+    30% {width:400px;}
+    80% {opacity:1;}
+    100% {opacity:0;width:400px;}
+}
+
+
+.dlab p {
+  font-size:12px;
+  color:#999;
+  margin-top:100px;
+}
+
+.dlab div{
+	padding-top: 150px;
+
+}
+@media only screen and (max-width: 360px){
+	.dlab div:first-child{
+		font-size: 16px;
+		display:inline-block;
+		text-align: center;
+	}
+	.dlab div.text{
+		padding-top: 10px;
+		font-size: 16px;
+	}
+	.dlab .text	span{
+		text-align: center;
+		position: absolute;
+		left: 50%;
+		transform: translate(-50% ,0%);
+
+	}
+	
+}
+
+</style>
+
+<div class="dlab">	
+		<div>Winkit</div> 
+		<div class="text"> 
+		  <span>: Winner's Development Kit</span>
+		</div>
+		<p>a css3 animation demo</p>	
+</div>

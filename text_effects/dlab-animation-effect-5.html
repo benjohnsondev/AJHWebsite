@@ -1,0 +1,76 @@
+<style>
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+body{
+	margin:0;
+	padding:0;
+}
+.dlab {
+  background-color: #111;
+  position:absolute;
+  width:100%;
+  height: 400px;
+  
+}
+.dlab .title {
+	font-family: "Montserrat";
+	text-align: center;
+	color: #FFF;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 400px;
+	letter-spacing: 1px;
+}
+
+.dlab h1 {
+	background-image: url(img/smoke.gif);
+	background-size: cover;
+	color: transparent;
+	-moz-background-clip: text;
+	-webkit-background-clip: text;
+	text-transform: uppercase;
+	font-size: 60px;
+	line-height: 70px;
+	margin: 10px 0;
+}
+/* styling my button */
+
+.dlab .white-mode {
+	text-decoration: none;
+	padding: 7px 10px;
+	background-color: #122;
+	border-radius: 3px;
+	color: #FFF;
+	transition: .35s ease-in-out;
+	position: absolute;
+	left: 15px;
+	bottom: 15px;
+	font-family: "Montserrat";
+}
+
+.dlab .white-mode:hover {
+	background-color: #FFF;
+	color: #122;
+}
+
+@media only screen and (max-width: 767px){
+	.dlab h1{
+		font-size: 60px;
+		line-height: 60px;
+	}
+}
+@media only screen and (max-width: 360px){
+	.dlab h1{
+		font-size: 36px;
+		line-height: 40px;
+	}
+}
+
+
+</style>
+<div class="dlab">
+	<div class="title">
+	 <h1>Winkit<br/>Winner's Development Kit</h1>
+	</div>
+</div>

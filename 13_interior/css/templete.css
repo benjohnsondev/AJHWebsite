@@ -1,0 +1,328 @@
+/*==========================
+	Custom css
+==========================*/
+@import url("https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900|Open+Sans:300,400,600,700,800|Roboto:100,300,400,500,700,900");
+@import url("http://fonts.googleapis.com/css?family=Quicksand:400%2C700");
+/* Line Drow Effect CSS */
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Montserrat",sans-serif;
+}
+.navbar {
+	margin-bottom:0;
+}
+.is-fixed .logo-header,
+.logo-header {
+	width: 200px;
+	height: 200px;
+  position: absolute;
+  margin-left: -10px;
+}
+
+.header-nav .nav > li > a{
+	 padding: 24px 12px 20px;
+	 font-size:18px;
+	 color:#fff;
+}
+.is-fixed .extra-nav,
+.extra-nav {
+    padding: 20px 0 17px 15px;
+}
+.extra-nav .site-button-link{
+	font-size:18px;
+}
+.header.dark,
+.header.dark .main-bar{
+	background: #0d0e10;
+	border-bottom:1px solid #262626;
+}
+/* About */
+.h2{
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 55px;
+}
+p{
+	font-size:16px;
+	line-height:28px;
+}
+.bg-black{
+	background-color:#18191B;
+}
+.img-effect-1 {
+    box-shadow: 20px 20px 0 0 #18191b, 31px 30px 0 0 #28292b;
+}
+.head-style {
+    color: #bca581;
+    font-size: 50px;
+    font-weight: 600;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    margin-top: 0;
+	font-family: montserrat;
+}
+.head-style:after {
+    color: #ffffff;
+    content: attr(data-name);
+    font-family: montserrat;
+    font-size: 200px;
+    opacity: 0.05;
+    position: absolute;
+    right: -80px;
+    top: 20px;
+}
+.about-info h3 {
+    color: #a0a0a0;
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: 8px;
+    line-height: 38px;
+    text-transform: uppercase;
+}
+.about-info p {
+    color: #dfdfdf;
+    font-size: 16px;
+    font-weight: 100;
+    letter-spacing: 3px;
+    line-height: 28px;
+}
+.site-button.outline {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    border-color: #303030;
+    border-radius: 1px;
+    border-style: solid;
+    border-width: 1px;
+    color: #808080;
+    letter-spacing: 6px;
+    padding: 13px 30px;
+    text-transform: uppercase;
+}
+
+/* Stats */
+.stats h2 {
+    border-right: 1px solid rgba(255, 255, 255, 0.15);
+    float: left;
+    font-size: 45px;
+    font-weight: 500;
+    line-height: 45px;
+    padding-right: 15px;
+	margin: 0 15px 0 0;
+	color:#bca581;
+}
+.stats span {
+    color: #ffffff;
+    float: left;
+    font-size: 16px;
+    line-height: 45px;
+    text-transform: capitalize;
+}
+.dlab-stats:before {
+    bottom: -20px;
+    color: #ffffff;
+    content: attr(data-name);
+    font-family: montserrat;
+    font-size: 100px;
+    font-weight: 700;
+    left: 20px;
+    opacity: 0.07;
+    position: absolute;
+    text-align: center;
+    top: auto;
+    z-index: 1;
+}
+
+/* Services */
+.icon-lg img {
+    height: 50px;
+    margin-top: 20px;
+}
+.our-services h3{
+	color: #fff;
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    line-height: 28px;
+    text-transform: uppercase;
+}
+.our-services p{
+	color: #a0a0a0;
+    font-size: 16px;
+    font-weight: 100;
+    letter-spacing: 3px;
+    line-height: 24px;
+}
+
+/* team */
+.our-team .dlab-info .dlab-title{
+	font-size: 28px;
+    font-weight: 400;
+}
+.our-team .dlab-info p{
+	color: #a0a0a0;
+    font-size: 16px;
+    font-weight: 100;
+    letter-spacing: 3px;
+    line-height: 24px;
+}
+.dlab-separator {
+	height:2px;
+	width:50px;
+}
+.site-button-secondry {
+    background-color: #232426;
+}
+.site-button-secondry:active, .site-button-secondry:hover, .site-button-secondry:focus, .active > .site-button-secondry {
+    background-color: #2b2c2e;
+    color: #ffffff;
+}
+.site-filters a {
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #909090;
+	padding: 8px 15px;
+}
+.dlab-gallery-box {
+    margin-bottom: 0;
+}
+
+
+
+
+/* footer */
+.footer-top{
+	background-color:#18191B;
+}
+.footer-top h6 {
+    color: #b0b0b0;
+    font-family: "Montserrat",sans-serif;
+    font-size: 22px;
+    font-weight: 300;
+    letter-spacing: 5px;
+    margin-bottom: 30px;
+    margin-top: 0;
+    text-transform: uppercase;
+}
+footer p,
+footer strong,
+footer b,
+footer {
+    color: #909090;
+    font-family: montserrat;
+    font-weight: 400;
+    letter-spacing: 3px;
+}
+.search-bx .form-control{
+	background-color:#111;
+	border:0;
+	height:43px;
+}
+.footer-bottom {
+    background-color: #111;
+	border-top: 0;
+}
+#loading-area{
+	background-image:none;
+	display: table;
+	text-align:center;
+	background-color:#1A1A1A;
+}
+#loading-area .ml6{
+	display:table-cell;
+	vertical-align:middle;
+	color:#BCA581;
+}
+.ml6 {
+  position: relative;
+  font-weight: 900;
+  font-size: 3.3em;
+}
+
+.ml6 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.2em;
+  padding-right: 0.05em;
+  padding-bottom: 0.1em;
+  overflow: hidden;
+}
+
+.ml6 .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+
+
+
+/* Spcaing Css */
+.content-inner{
+	padding-top:100px;
+	padding-bottom:80px;
+}
+.content-inner-1{
+	padding-top:100px;
+	padding-bottom:0px;
+}
+.content-inner-2{
+	padding-top:100px;
+	padding-bottom:100px;
+}
+.section-full{
+	overflow:hidden;
+}
+/* Mobile Spacing */
+@media only screen and (max-width: 767px) {
+	.content-inner {
+		padding-top: 50px;
+		padding-bottom: 40px;
+	}
+	.content-inner-1{
+		padding-top:50px;
+		padding-bottom:0px;
+	}
+	.content-inner-2{
+		padding-top:70px;
+		padding-bottom:40px;
+	}
+}
+/* Responsive */
+@media only screen and (max-width: 991px) {
+	.about-info .p-r100{
+		padding-right:0;
+	}
+	.site-header .is-fixed .header-nav .nav {
+		height: 180px;
+	}
+	.header-nav .nav > li > a{
+		 padding: 15px 20px;
+	}
+	.is-fixed .logo-header,
+	.logo-header{
+		height: 50px;
+		width: 140px;
+	}
+	.site-header .navbar-toggle,
+	.site-header .is-fixed .navbar-toggle{
+		margin: 16px 0 14px 10px;
+	}
+}
+@media only screen and (max-width: 1366px) {
+	.dlab-contact .icon-content p{
+		font-size:13px;
+	}
+}
+@media only screen and (max-width: 1280px) {
+	.myNavbar .navbar-right{
+		margin-right:5px;
+	}
+}
+@media only screen and (max-width: 767px) {
+	.creative-work .card-container{
+		width:100%;
+	}
+	.worker {
+		margin-top:20px;
+	}
+	.head-style{
+		font-size:35px;
+	}
+}

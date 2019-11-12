@@ -1,0 +1,94 @@
+
+<style>
+body{
+	margin:0;
+	padding:0;
+}
+.dlab {
+  background: linear-gradient(to bottom, #000428, #004e92);
+  position:absolute;
+  width:100%;
+  height: 400px;
+  
+}
+
+.dlab h1 {
+  background: url(img/6963bbf342d87b3a2150bd8f59682b89.jpg);
+  -webkit-background-clip: text;
+  background-size: contain;
+  width: 100%;
+  text-align: center;
+  color: transparent;
+  font-weight: 900;
+}
+.dlab h1::before {
+  content: attr(data-heading);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background: linear-gradient(45deg, rgba(255, 255, 255, 0) 45%, rgba(255, 255, 255, 0.8) 50%, rgba(255, 255, 255, 0) 55%, rgba(255, 255, 255, 0) 100%);
+  -webkit-background-clip: text;
+  color: transparent;
+  mix-blend-mode: screen;
+  -webkit-animation: shine 1s infinite;
+          animation: shine 1s infinite;
+  background-size: 200%;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2), -2px 2px 10px rgba(0, 0, 0, 0.2), -2px -2px 10px rgba(0, 0, 0, 0.2);
+}
+
+@-webkit-keyframes shine {
+  0% {
+    background-position: -100%;
+  }
+  100% {
+    background-position: 100%;
+  }
+}
+
+@keyframes shine {
+  0% {
+    background-position: -100%;
+  }
+  100% {
+    background-position: 100%;
+  }
+}
+/* Not needed for demo */
+@font-face {
+  font-family: 'frozen';
+  src: url("fonts/Ice-kingdom-Bold-Por-Kustren.woff");
+}
+html, body {
+  height: 100%;
+}
+
+.dlab h1 {
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  position: absolute;
+  font-size: 150px;
+  margin: 0;
+  font-family: 'frozen', serif;
+  font-weight: 700;
+  line-height: 100%;
+}
+</style>
+
+<div class="dlab">
+<h1 contenteditable data-heading="Winkit">
+	Winkit
+</h1>
+</div>
+<script>
+
+// JS is to make the text editable for demo purpose, not required for the effect. Thanks for the suggestion @chriscoyier! 
+var h1 = document.querySelector("h1");
+
+h1.addEventListener("input", function() {
+    this.setAttribute("data-heading", this.innerText);
+});
+</script>
+
